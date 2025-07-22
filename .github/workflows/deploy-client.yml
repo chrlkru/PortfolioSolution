@@ -18,7 +18,7 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Publish WASM
-        run: dotnet publish src/PortfolioClient/ -c Release -o build
+        run: dotnet publish PortfolioClient/ -c Release -o build
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
